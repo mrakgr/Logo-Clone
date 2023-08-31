@@ -1,12 +1,12 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'scene-component',
-  templateUrl: './scene-component.component.html',
-  styleUrls: ['./scene-component.component.css'],
+  selector: 'app-scene',
+  templateUrl: './scene.component.html',
+  styleUrls: ['./scene.component.css'],
   standalone: true,
 })
-export class SceneComponentComponent implements OnInit {
+export class SceneComponent implements OnInit {
   constructor() {}
 
   @ViewChild('sceneCanvas')

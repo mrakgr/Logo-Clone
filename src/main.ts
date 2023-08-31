@@ -2,13 +2,14 @@ import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { SceneComponentComponent } from './scene-component/scene-component.component';
+import { SceneComponent } from './scene/scene.component';
+import { EditorComponent } from './editor/editor.component';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, SceneComponentComponent],
-  template: `<scene-component></scene-component>`,
+  imports: [CommonModule, SceneComponent, EditorComponent],
+  template: `<app-editor></app-editor>`,
 })
 export class App {
   name = 'Angular';
